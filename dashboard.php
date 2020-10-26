@@ -43,6 +43,7 @@
     <script src="js/dashboard.js"></script>
 
     <link rel="stylesheet" href="css/onoff.css">
+    <link rel="stylesheet" href="css/systemonoff.css">
     <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
 <script>
 window.onload = function () {
@@ -131,21 +132,20 @@ chart.render();
       </div>
     </div>
   </section>
+
+<!--Motor Control Section Starts Here-->
   <section class="admins">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
-        </div>
         <div class="col-md-6">
           <div class="box">
             <h3>Motor Control Panel:</h3>
 
             <!--On off switch starts here-->
             <div class="admin">
-              <div class="info">
                 
                     <main>
-                      <h1 class="heading">Click to turn 
+                      <h1 class="heading" style="color:white;">Click to turn 
                         <span class="on">
                           <span>
                             on
@@ -166,9 +166,6 @@ chart.render();
                         </span>
                       </button>
                     </main>
-
-
-
 
                   <script>
                             const btn = document.querySelector('.btn');
@@ -222,89 +219,45 @@ chart.render();
 
                   </script>
 
-
-                
-
-
-
-
-
               <!--Class Info Ends here-->
-              </div>
-            </div>
-            <div class="admin">
-              <div class="img">
-                <img class="img-responsive" src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907086/small/1501685404/enhance" alt="admin">
-              </div>
-              <div class="info">
-                <h3>Joge Lucky</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-            <div class="admin">
-              <div class="img">
-                <img class="img-responsive" src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance" alt="admin">
-              </div>
-              <div class="info">
-                <h3>Joge Lucky</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
-      </section>
-    <section class='statis text-center'>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="box bg-primary">
-              <i class="fa fa-eye"></i>
-              <h3>5,154</h3>
-              <p class="lead">Page views</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box danger">
-              <i class="fa fa-user-o"></i>
-              <h3>245</h3>
-              <p class="lead">User registered</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box warning">
-              <i class="fa fa-shopping-cart"></i>
-              <h3>5,154</h3>
-              <p class="lead">Product sales</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box success">
-              <i class="fa fa-handshake-o"></i>
-              <h3>5,154</h3>
-              <p class="lead">Transactions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="chrt3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="chart-container">
-              <canvas id="chart3" width="100%"></canvas>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </section>
+<!--Motor Control Section Ends here-->         
 
 
+
+
+
+<!--System Control Section Starts Here-->
+<section class="admins">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <h3>System Control Panel:</h3>
+
+            <!--On off switch starts here-->
+            <div class="admin">
+            <label class="rocker" style="align-items: center;">
+                <input type="checkbox">
+                <span class="switch-left">ON</span>
+                <span class="switch-right">OFF</span>
+            </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--System Control Section Ends here-->         
+
+
+
+    
 </body>
 </html>
