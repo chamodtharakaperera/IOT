@@ -109,39 +109,7 @@ chart.render();
       </div>
     </div>
   </div>
-  <section class="statistics">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box">
-            <i class="fa fa-envelope fa-fw bg-primary"></i>
-            <div class="info">
-              <h3>1,245</h3> <span>Emails</span>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box">
-            <i class="fa fa-file fa-fw danger"></i>
-            <div class="info">
-              <h3>34</h3> <span>Projects</span>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box">
-            <i class="fa fa-users fa-fw success"></i>
-            <div class="info">
-              <h3>5,245</h3> <span>Users</span>
-              <p>Lorem ipsum dolor sit amet</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <section class="charts">
     <div class="container-fluid">
       <div class="row">
@@ -169,14 +137,98 @@ chart.render();
         </div>
         <div class="col-md-6">
           <div class="box">
-            <h3>Moderators:</h3>
+            <h3>Motor Control Panel:</h3>
+
+            <!--On off switch starts here-->
             <div class="admin">
-              <div class="img">
-                <img class="img-responsive" src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907114/small/1501685404/enhance" alt="admin">
-              </div>
               <div class="info">
-                <h3>Joge Lucky</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                
+                    <main>
+                      <h1 class="heading">Click to turn 
+                        <span class="on">
+                          <span>
+                            on
+                          </span>
+                        </span>
+                        <span class="off">
+                          <span>
+                            off
+                          </span>
+                        </span>
+                      </h1>
+                      <button type="button" class="btn">
+                        <span>
+                          <b></b>
+                          <svg viewBox="-5.5 -5.5 71 71" id="circle">
+                            <circle cx="30" cy="30" r="30" stroke="white" stroke-width="11" fill="transparent"></circle>
+                          </svg>
+                        </span>
+                      </button>
+                    </main>
+
+
+
+
+                  <script>
+                            const btn = document.querySelector('.btn');
+                    const heading = document.querySelector('.heading');
+
+                    let active = false;
+
+                    const turnOn = () => {
+                      btn.classList.add('active');
+                      heading.classList.add('active');
+                    }
+
+                    const turnOff = () => {
+                      btn.classList.remove('active');
+                      heading.classList.remove('active');
+                    }
+
+                    const toggleAnimation = () => {
+                      btn.classList.remove('animating');
+                      active ? turnOn() : turnOff();
+                    };
+
+                    function clickHandler() {
+                      active = !active;
+                      btn.classList.add('animating');
+                      
+                      btn.addEventListener('animationend', toggleAnimation);
+                    }
+
+                    btn.addEventListener('click', clickHandler);
+
+
+
+                    btn.addEventListener('animationend', () => {
+                      btn.classList.remove('animating');
+                      if (active === true) {
+                        btn.classList.add('active');
+                        heading.classList.add('active');
+                      } else {
+                        btn.classList.remove('active');
+                        heading.classList.remove('active');
+                      }
+                    });
+
+
+                    btn.addEventListener('animationend', () => {
+                      btn.classList.remove('animating');
+                      active ? turnOn() : turnOff();
+                    });
+
+
+                  </script>
+
+
+                
+
+
+
+
+
+              <!--Class Info Ends here-->
               </div>
             </div>
             <div class="admin">
