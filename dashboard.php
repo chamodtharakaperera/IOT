@@ -121,12 +121,34 @@ chart.render();
             <p>This chart represents moisture data required for analysis.<br/><br/><br/></p>
             <div id="chartContainer" style="height: 370px; width: 1000px;"></div>
             <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="chart-container">
-            <h3>Chart2</h3>
-            <canvas id="myChart2"></canvas>
+            <h3>Temperature Report</h3>
+            <p>This chart represents temperature data required for analysis.<br/><br/><br/></p>
+            <div id="chartContainer" style="height: 370px; width: 1000px;"></div>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="chart-container">
+            <h3>Humidity Report</h3>
+            <p>This chart represents humidity data required for analysis.<br/><br/><br/></p>
+            <div id="chartContainer" style="height: 370px; width: 1000px;"></div>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="chart-container">
+            <h3>Light Report</h3>
+            <p>This chart represents light data required for analysis.<br/><br/><br/></p>
+            <div id="chartContainer" style="height: 370px; width: 1000px;"></div>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
           </div>
         </div>
       </div>
@@ -243,7 +265,7 @@ chart.render();
 
             <!--On off switch starts here-->
             <div class="admin">
-            <label class="rocker" style="align-items: center;">
+            <label class="rocker" style="position:absolute;">
                 <input type="checkbox">
                 <span class="switch-left">ON</span>
                 <span class="switch-right">OFF</span>
