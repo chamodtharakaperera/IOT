@@ -85,15 +85,17 @@ chart.render();
     </div>
   </div>
   <ul class="categories">
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Moisture Report</a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#moisture"> Moisture Report</a>
     </li>
-    <li><i class="fa fa-support fa-fw"></i><a href="#"> Temperature Report</a>
+    <li><i class="fa fa-support fa-fw"></i><a href="#temperature"> Temperature Report</a>
     </li>
-    <li><i class="fa fa-envelope fa-fw"></i><a href="#"> Humidity Report</a>
+    <li><i class="fa fa-envelope fa-fw"></i><a href="#humidity"> Humidity Report</a>
     </li>
-    <li><i class="fa fa-users fa-fw"></i><a href="#"> Light Report</a>
+    <li><i class="fa fa-users fa-fw"></i><a href="#light"> Light Report</a>
     </li>
-    <li><i class="fa fa-bolt fa-fw"></i><a href="#"> Motor Control</a>
+    <li><i class="fa fa-bolt fa-fw"></i><a href="#motor"> Motor Control</a>
+    </li>
+    <li><i class="fa fa-bolt fa-fw"></i><a href="#system"> System Control</a>
     </li>
   </ul>
 </aside>
@@ -105,14 +107,14 @@ chart.render();
         <div class="col-md-12">
           <div class="content">
             <h2>Welcome to Dashboard</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p>This section can be used for the analysis of data and IOT System Controlling.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
   
-  <section class="charts">
+  <section id="moisture" class="charts">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
@@ -124,7 +126,7 @@ chart.render();
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div id="temperature" class="col-md-6">
           <div class="chart-container">
             <h3>Temperature Report</h3>
             <p>This chart represents temperature data required for analysis.<br/><br/><br/></p>
@@ -133,7 +135,7 @@ chart.render();
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div id="humidity" class="col-md-6">
           <div class="chart-container">
             <h3>Humidity Report</h3>
             <p>This chart represents humidity data required for analysis.<br/><br/><br/></p>
@@ -142,7 +144,7 @@ chart.render();
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div id="light" class="col-md-6">
           <div class="chart-container">
             <h3>Light Report</h3>
             <p>This chart represents light data required for analysis.<br/><br/><br/></p>
@@ -161,7 +163,7 @@ chart.render();
       <div class="row">
         <div class="col-md-6">
           <div class="box">
-            <h3>Motor Control Panel:</h3>
+            <h3 id="motor">Motor Control Panel:</h3>
 
             <!--On off switch starts here-->
             <div class="admin">
@@ -264,7 +266,7 @@ chart.render();
             <h3>System Control Panel:</h3>
 
             <!--On off switch starts here-->
-            <div class="admin">
+            <div id="system" class="admin">
             <label class="rocker" style="position:absolute;">
                 <input type="checkbox">
                 <span class="switch-left">ON</span>
@@ -276,10 +278,6 @@ chart.render();
       </div>
     </div>
   </section>
-<!--System Control Section Ends here-->         
-
-
-
-    
+<!--System Control Section Ends here-->             
 </body>
 </html>
