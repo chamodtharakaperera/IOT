@@ -41,7 +41,7 @@
       <p style="color:white">
           Higher National Diploma In Software Engineering IOT Module
       </p>
-      <a href="work.php" class="btn">
+      <a href="dashboard.php" class="btn">
         View Report Data <i class="fas fa-chevron-right"></i>
       </a>
     </header>
